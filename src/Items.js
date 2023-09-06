@@ -25,7 +25,7 @@ export default function ItemDetail() {
         axios.delete(`https://igneous-gamma-398113.el.r.appspot.com/item/${itemName}`)
             .then(response => {
                 console.log(response);
-                if(response.statusText==='OK'){
+                if(response.status === 200){
                     window.location.reload()
                 }
 
@@ -38,7 +38,7 @@ export default function ItemDetail() {
     };
 
     return (
-        <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
+        <Box justifyContent="center" alignItems="center" minHeight="100vh">
             {
                 itemData.map(data => (
                     <Paper elevation={3} style={{ padding: '20px', minWidth: '200px', width: '200px%', marginRight: "20px" }} >
