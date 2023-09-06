@@ -32,7 +32,7 @@ const AddItems = () => {
     
 
         try {
-            const response = await axios.post('https://igneous-gamma-398113.el.r.appspot.com//additems', formData, {
+            const response = await axios.post('https://igneous-gamma-398113.el.r.appspot.com/additems', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
