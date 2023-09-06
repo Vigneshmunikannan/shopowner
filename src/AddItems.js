@@ -37,7 +37,7 @@ const AddItems = () => {
                     'Content-Type': 'multipart/form-data',
                 },
             });
-            if (response.statusText === 'OK') {
+            if (response.status === 200) {
                 console.log("inside ok")
 
 
